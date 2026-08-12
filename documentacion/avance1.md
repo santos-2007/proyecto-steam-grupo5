@@ -21,14 +21,14 @@ Tecnologías y materiales: Ahora mismo no tenemos las tecnologías y materiales 
 - ```from microbit import *
 import music
 
-# Contraseña
+#Contraseña
 clave = "ABAAB"
 ingreso = ""
 
-# Tiempo de la última pulsación
+#Tiempo de la última pulsación
 ultimo_tiempo = 0
 
-# Imagen de candado abierto
+#Imagen de candado abierto
 candado_abierto = Image(
     "00000:"
     "09090:"
@@ -37,7 +37,7 @@ candado_abierto = Image(
     "99999"
 )
 
-# Posición inicial (cerrado)
+#Posición inicial cerrado
 pin0.set_analog_period(20)
 pin0.write_analog(26)   # Aproximadamente 0°
 
