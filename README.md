@@ -6,7 +6,7 @@
 - [Opcional: agregar el nombre del equipo]
 
 *Nota:* Este proyecto se realiza durante el curso **Laboratorio STEAM+** de la
-tecnicatura **Redes y Software** del [**nombre del instituto**] de **UTU**.
+tecnicatura **Redes y Software** del [**Instituto Superior de Brazo Oriental**] de **UTU**.
 
 ## Integrantes
 - [Mateo De Los Santos]
