@@ -1,9 +1,9 @@
-# [Caja Fuerte - MAXTECH]
+# [Caja Fuerte]
 
 ## Descripción
 - [Agregar un párrafo con descripción del proyecto STEAM]
 - [Agregar una imagen o fotografía relevante al proyecto]
-- [Opcional: agregar el nombre del equipo]
+- [MAXTECH]
 
 *Nota:* Este proyecto se realiza durante el curso **Laboratorio STEAM+** de la
 tecnicatura **Redes y Software** del [**Instituto Superior de Brazo Oriental**] de **UTU**.
