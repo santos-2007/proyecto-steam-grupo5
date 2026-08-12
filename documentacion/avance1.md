@@ -1,6 +1,6 @@
 # Informe de Avance 1: Agosto 2026
 
-## [5]/8/202x
+## [5]/8/2026
 - La idea principal es hacer una caja fuerte con contraseña y sensor de movimiento, básicamente una caja fuerte con 2 métodos de seguridad, el primero sería la contraseña y el segundo funcionaria solo si la contraseña es incorrecta, si la contraseña no es correcta se activa el sensor de movimiento para detectar si la persona está intentando abrir la caja de otra manera y si detecta movimiento se acciona una alarma.
 
 - Se armo el equipo entre: Mateo De Los Santos, Joaquin Cedrez, Ignacio Beares, Mateo Artave
