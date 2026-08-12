@@ -1,6 +1,6 @@
 *Este repositorio es una plantilla para ser usada para documentar proyectos STEAM.*
 
-# [Nombre Proyecto STEAM]
+# [Caja Fuerte - MAXTECH]
 
 ## Descripción
 - [Agregar un párrafo con descripción del proyecto STEAM]
@@ -11,12 +11,10 @@
 tecnicatura **Redes y Software** del [**nombre del instituto**] de **UTU**.
 
 ## Integrantes
-- [Nombre integrante 1]
-- [Nombre integrante 2]
-- [Nombre integrante 3]
-- [Nombre integrante 4]
-- [Nombre integrante 5]
-- [Opcional: agregar fotos o avatar para cada integrante]
+- [Mateo De Los Santos]
+- [Mateo Artave]
+- [Joaquin Cedrez]
+- [Ignacio Beares]
 
 ## Documentación
 - [Informe de Avance - Agosto 202x](documentacion/avance1.md)
