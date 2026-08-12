@@ -1,5 +1,3 @@
-*Este repositorio es una plantilla para ser usada para documentar proyectos STEAM.*
-
 # [Caja Fuerte - MAXTECH]
 
 ## Descripción
