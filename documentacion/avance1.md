@@ -167,7 +167,7 @@ while True:
             display.show(candado_abierto)
 
             # Sonido de apertura
-            music.play(music.POWER_UP)
+            music.play(music.JUMP_UP)
 
             # Abrir la tranca
             pin0.write_analog(77)   # Aproximadamente 90°
@@ -178,7 +178,7 @@ while True:
                 if button_b.was_pressed():
 
                     # Cerrar la tranca
-                    music.play(music.POWER_DOWN)
+                    music.play(music.BA_DING)
                     pin0.write_analog(26)
                     sleep(500)
                     
