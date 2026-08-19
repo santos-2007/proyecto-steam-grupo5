@@ -1,6 +1,6 @@
 # Informe de Avance 1: Agosto 2026
 
-## 5/8/2026
+## Miércoles 5/8/2026
 - La idea principal es hacer una caja fuerte con contraseña y sensor de movimiento, básicamente una caja fuerte con 2 métodos de seguridad, el primero sería la contraseña y el segundo funcionaria solo si la contraseña es incorrecta, si la contraseña no es correcta se activa el sensor de movimiento para detectar si la persona está intentando abrir la caja de otra manera y si detecta movimiento se acciona una alarma.
 
 - Se armo el equipo entre: Mateo De Los Santos, Joaquin Cedrez, Ignacio Beares, Mateo Artave
@@ -17,7 +17,7 @@ Tecnologías y materiales: Ahora mismo no tenemos las tecnologías y materiales 
 
 <img width="400" height="400" alt="Boceto" src="https://github.com/user-attachments/assets/9cf06b5f-4aaf-4bc0-a142-3be024a35530" />
 
-## 12/8/2026
+## Miércoles 12/8/2026
 - En este dia empezamos con el codigo del microbit que seria para ejecutar la contraseña de nuestra caja fuerte (dejamos el avance más abajo), esto puede ir cambiando según vayamos avanazando.
 - Estamos pensando usar una tarjeta de expanción para la microbit porque al momento de conectar el servomotor que no haga un
 - falso contacto con otra conexión y por comodidad
@@ -96,4 +96,15 @@ while True:
 ``` 
 
 <img width="400" height="400" alt="512746a4-4f95-4de5-919f-d0c9f7fd9957" src="https://github.com/user-attachments/assets/1c8767e1-7b96-4a60-a90b-5ae34595efe5" />
+
+
+
+## Miércoles 18/8/2026
+Empezamos con el empaquetado en 3D Tinkercad cual le pedimos algunas ideas a chatgpt. Conversamos y vamos a poner el serdo motor adentro de la caja fuerte y la puerta va a tener la tranca que se asegura la caja fuerte 
+
+
+<img width="1536" height="1024" alt="27bd4bd7-f5cb-4861-881b-1f4ca39d2fd4" src="https://github.com/user-attachments/assets/a169c8a6-40fb-4513-a5e0-48adbe51a9d9" />
+
+
+
 
