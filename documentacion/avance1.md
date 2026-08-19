@@ -15,12 +15,15 @@ Definimos que no vamos a usar los kits de lego, vamos a hacerlo con microbit y a
 Tecnologías y materiales: Ahora mismo no tenemos las tecnologías y materiales definidos debido a que estamos analizando si hacerlo con los kits de lego spike antes mencionados o de manera convencional con microbit y arduino
 
 
-<img width="400" height="400" alt="2520e104-5d61-4ddb-b2d0-7b458af11b3d" src="https://github.com/user-attachments/assets/9cf06b5f-4aaf-4bc0-a142-3be024a35530" />
+<img width="400" height="400" alt="Boceto" src="https://github.com/user-attachments/assets/9cf06b5f-4aaf-4bc0-a142-3be024a35530" />
 
 ## 12/8/2026
-- En este dia empezamos con el codigó del microbit que seria para ejecutar la contraseña de nuestra caja fuerte (dejamos el avance más abajo), esto puede ir cambiando según vayamos avanazando.
-- Estamos pensando usar una tarjeta de expanción para la microbit porque al momento de conectar el servomotor que no haga un falso contacto con otra conexión y por comodidad
-- ```from microbit import *
+- En este dia empezamos con el codigo del microbit que seria para ejecutar la contraseña de nuestra caja fuerte (dejamos el avance más abajo), esto puede ir cambiando según vayamos avanazando.
+- Estamos pensando usar una tarjeta de expanción para la microbit porque al momento de conectar el servomotor que no haga un
+- falso contacto con otra conexión y por comodidad
+
+```python
+from microbit import *
 import music
 
 #Contraseña
@@ -90,7 +93,7 @@ while True:
 
         ingreso = ""
         display.clear()
-- 
+``` 
 
 <img width="400" height="400" alt="512746a4-4f95-4de5-919f-d0c9f7fd9957" src="https://github.com/user-attachments/assets/1c8767e1-7b96-4a60-a90b-5ae34595efe5" />
 
