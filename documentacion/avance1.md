@@ -105,6 +105,94 @@ Empezamos con el empaquetado en 3D Tinkercad cual le pedimos algunas ideas a cha
 
 <img width="1536" height="1024" alt="27bd4bd7-f5cb-4861-881b-1f4ca39d2fd4" src="https://github.com/user-attachments/assets/a169c8a6-40fb-4513-a5e0-48adbe51a9d9" />
 
+Código nuevo y mejorado:
+
+```from microbit import *
+import music
+
+# Contraseña
+clave = "ABAAB"
+ingreso = ""
+
+# Tiempo de la última pulsación
+ultimo_tiempo = 0
+
+# Imagen de candado abierto
+candado_abierto = Image(
+    "00000:"
+    "09090:"
+    "90009:"
+    "99999:"
+    "99999"
+)
+
+# Posición inicial cerrado
+pin0.set_analog_period(80)
+pin0.write_analog(45)   # Aproximadamente 0°
+
+while True:
+
+    # Si pasaron más de 2 segundos entre pulsaciones
+    if len(ingreso) > 0 and running_time() - ultimo_tiempo > 2000:
+        display.show(Image.NO)
+        sleep(1000)
+        ingreso = ""
+        display.clear()
+
+    # Botón A
+    if button_a.was_pressed():
+        if len(ingreso) < 5:
+            ingreso += "A"
+            ultimo_tiempo = running_time()
+            display.show("A")
+            sleep(150)
+            display.clear()
+
+    # Botón B
+    if button_b.was_pressed():
+        if len(ingreso) < 5:
+            ingreso += "B"
+            ultimo_tiempo = running_time()
+            display.show("B")
+            sleep(150)
+            display.clear()
+
+    # Verificar automáticamente al llegar a 5 caracteres
+    if len(ingreso) == 5:
+
+        if ingreso == clave:
+
+            # Mostrar candado abierto
+            display.show(candado_abierto)
+
+            # Sonido de apertura
+            music.play(music.POWER_UP)
+
+            # Abrir la tranca
+            pin0.write_analog(77)   # Aproximadamente 90°
+
+            # Mantener abierta hasta que se presione B
+            while True:
+
+                if button_b.was_pressed():
+
+                    # Cerrar la tranca
+                    music.play(music.POWER_DOWN)
+                    pin0.write_analog(26)
+                    sleep(500)
+                    
+                    break
+
+                sleep(20)
+
+        else:
+            display.show(Image.NO)
+            sleep(1000)
+
+        ingreso = ""
+        display.clear()```
+
+
 
 
 
