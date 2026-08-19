@@ -13,10 +13,10 @@ tecnicatura **Redes y Software** del [**Instituto Superior de Brazo Oriental**] 
 - Ignacio Beares
 
 ## Documentación
-- Informe de Avance - Agosto 202x(documentacion/avance1.md)
-- Informe de Avance - Septiembre 202x(documentacion/avance2.md)
-- Informe de Avance - Octubre 202x(documentacion/avance3.md)
-- Documentación técnica(documentacion/documentacion_tecnica.md)
+- [Informe de Avance - Agosto 2026](documentacion/avance1.md)
+- [Informe de Avance - Septiembre 2026](documentacion/avance2.md)
+- [Informe de Avance - Octubre 2026](documentacion/avance3.md)
+- [Documentación técnica](documentacion/documentacion_tecnica.md)
 
 ## Código fuente
 - Agregar enlace a la carpeta de GitHub donde se haya guardado el código fuente]
