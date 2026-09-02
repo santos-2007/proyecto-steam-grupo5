@@ -191,7 +191,8 @@ while True:
             sleep(1000)
 
         ingreso = ""
-        display.clear()```
+        display.clear()
+```
 
 
 
