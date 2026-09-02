@@ -128,8 +128,8 @@ candado_abierto = Image(
 )
 
 # Posición inicial cerrado
-pin0.set_analog_period(80)
-pin0.write_analog(45)   # Aproximadamente 0°
+pin0.set_analog_period(90)
+pin0.write_analog(20)   # Aproximadamente 0°
 
 while True:
 
@@ -163,28 +163,28 @@ while True:
 
         if ingreso == clave:
 
-            # Mostrar candado abierto
-            display.show(candado_abierto)
-
             # Sonido de apertura
-            music.play(music.JUMP_UP)
+music.play(["C5:1", "E5:1", "G5:2"])
 
-            # Abrir la tranca
-            pin0.write_analog(77)   # Aproximadamente 90°
+# Abrir la tranca
+pin0.write_analog(77)
 
-            # Mantener abierta hasta que se presione B
-            while True:
+# Mantener abierta hasta que se presione B
+while True:
 
-                if button_b.was_pressed():
+    if button_b.was_pressed():
 
-                    # Cerrar la tranca
-                    music.play(music.BA_DING)
-                    pin0.write_analog(26)
-                    sleep(500)
-                    
-                    break
+        # Sonido de cierre
+        music.play(["G5:1", "E5:1", "C5:2"])
 
-                sleep(20)
+        # Cerrar la tranca
+        pin0.write_analog(20)
+        sleep(500)
+
+        break
+
+    sleep(20)
+
 
         else:
             display.show(Image.NO)
@@ -195,5 +195,12 @@ while True:
 
 
 
+##Miércoles 26/8/2026
+En este día empezamos con la manualidades de caja fuerte y probar el servomotor, en la caja fuerte pusimos las trancas y servomotor para probar el funcionamiento de esta, en este proceso hicimos modificaciones en el código(tenia malos funcionamientos). Después de muchos intentos los conseguimos
+
+##Video del avance de este día  
+
+https://github.com/user-attachments/assets/6bf8e3df-f4b4-4d24-b6be-c07f00165dc3
 
 
+En este video se ve claramente se ve funcionamiento de la caja fuerte. 
