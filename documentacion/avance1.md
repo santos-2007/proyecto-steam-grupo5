@@ -99,7 +99,7 @@ while True:
 
 
 
-## Miércoles 18/8/2026
+## Miércoles 19/8/2026
 Empezamos con el empaquetado en 3D Tinkercad cual le pedimos algunas ideas a chatgpt. Conversamos y vamos a poner el servomotor adentro de la caja fuerte y la puerta va a tener la tranca que se asegura la caja fuerte, Hicimos avances en el codigo que tenía unos pequeños problemas de logistica. 
 
 
