@@ -196,10 +196,10 @@ while True:
 
 
 
-##Miércoles 26/8/2026
+## Miércoles 26/8/2026
 En este día empezamos con la manualidades de caja fuerte y probar el servomotor, en la caja fuerte pusimos las trancas y servomotor para probar el funcionamiento de esta, en este proceso hicimos modificaciones en el código(tenia malos funcionamientos). Después de muchos intentos los conseguimos
 
-##Video del avance de este día  
+## Video del avance de este día  
 
 https://github.com/user-attachments/assets/6bf8e3df-f4b4-4d24-b6be-c07f00165dc3
 
