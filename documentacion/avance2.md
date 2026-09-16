@@ -127,13 +127,11 @@ No hubo clases durante esta fecha, por lo que no se realizaron avances en el pro
 
 
 - **Tareas completadas:**
-
-
-- **Problemas encontrados y soluciones/alternativas propuestas:**
-
+- Mejoramos el codigo en base a una idea del profe, cual fue que cada vez flasheeamos el microbit se podia meter la contraseña que quisieras y se mantenga en todo el proceso hasta que sea haga un flasheo
+-Se mejoro la cerradura de la caja para que el servomotor no se mueva y se logro   
 
 - **Próximos pasos:**
-
+agregar la luz led para confirmar que esta abierta o cerrada la caja fuerte
 
 - **Imágenes o videos ilustrativos del avance:**
   - [Agregar imágenes o videos del proyecto]
