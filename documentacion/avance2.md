@@ -133,5 +133,139 @@ No hubo clases durante esta fecha, por lo que no se realizaron avances en el pro
 - **Próximos pasos:**
 agregar la luz led para confirmar que esta abierta o cerrada la caja fuerte
 
-- **Imágenes o videos ilustrativos del avance:**
-  - [Agregar imágenes o videos del proyecto]
+
+
+
+## 30/9/2026
+
+  - **Tareas completadas:**
+  - Pendiente
+
+  Nuevo código:
+  ```
+from microbit import *
+import music
+
+# Contraseña
+clave = ""
+ingreso = ""
+
+# Tiempo de la última pulsación
+ultimo_tiempo = 0
+
+cerrado = 25
+abierto = 64
+
+# Imagen de candado abierto
+candado_abierto = Image(
+    "00000:"
+    "09090:"
+    "90009:"
+    "99999:"
+    "99999"
+)
+
+# Posición inicial cerrado
+pin0.set_analog_period(20)
+pin0.write_analog(cerrado)
+
+while True:
+
+    # Si no hay una clave configurada
+    if clave == "":
+
+        display.show("CLAVE")
+        sleep(1000)
+        display.clear()
+
+        # Ingresar nueva clave
+        while len(ingreso) < 5:
+
+            if button_a.was_pressed():
+                ingreso += "A"
+                display.show("A")
+                sleep(150)
+                display.clear()
+
+            if button_b.was_pressed():
+                ingreso += "B"
+                display.show("B")
+                sleep(150)
+                display.clear()
+
+        # Guardar la clave ingresada
+        clave = ingreso
+        ingreso = ""
+
+        display.show(Image.YES)
+        music.play(["C5:1"])
+        sleep(1000)
+        display.clear()
+
+    else:
+
+        # Si pasaron más de 2 segundos entre pulsaciones
+        if len(ingreso) > 0 and running_time() - ultimo_tiempo > 2000:
+            display.show(Image.NO)
+            sleep(1000)
+            ingreso = ""
+            display.clear()
+
+        # Botón A
+        if button_a.was_pressed():
+            if len(ingreso) < 5:
+                ingreso += "A"
+                ultimo_tiempo = running_time()
+                display.show("A")
+                sleep(150)
+                display.clear()
+
+        # Botón B
+        if button_b.was_pressed():
+            if len(ingreso) < 5:
+                ingreso += "B"
+                ultimo_tiempo = running_time()
+                display.show("B")
+                sleep(150)
+                display.clear()
+
+        # Verificar automáticamente al llegar a 5 caracteres
+        if len(ingreso) == 5:
+
+            if ingreso == clave:
+
+                # Sonido de apertura
+                music.play(["G5:2"])
+
+                # Abrir la tranca
+                pin0.write_analog(abierto)
+
+                # Mantener abierta hasta que se presione B
+                while True:
+
+                    if button_b.was_pressed():
+
+                        # Sonido de cierre
+                        music.play(["C5:2"])
+
+                        # Cerrar la tranca
+                        pin0.write_analog(cerrado)
+                        sleep(500)
+
+                        break
+
+                    sleep(20)
+
+            else:
+                display.show(Image.NO)
+                sleep(1000)
+
+            # Reiniciar el ingreso
+            ingreso = ""
+            display.clear()
+  ```
+
+  - **Próximos pasos:**
+    Pendiente  
+
+
