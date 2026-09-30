@@ -139,7 +139,7 @@ agregar la luz led para confirmar que esta abierta o cerrada la caja fuerte
 ## 30/9/2026
 
   - **Tareas completadas:**
-  - Pendiente
+  - Probar y diseñar las luces leds para la caja fuerte.
 
   Nuevo código:
   ```
