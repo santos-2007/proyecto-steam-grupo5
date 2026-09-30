@@ -290,11 +290,14 @@ while True:
   ```
 
   - **Próximos pasos:**
-    Pendiente
+    Incorporar las luces LED en la caja.
 
 
   - **Video:**
-  - Uploading WhatsApp Video 2026-09-30 at 8.32.26 PM.mp4…
+  - 
+https://github.com/user-attachments/assets/6a8d7ba4-70cb-4d47-9eba-6de533140a34
+
+
 
 
 
