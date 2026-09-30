@@ -169,6 +169,14 @@ candado_abierto = Image(
 pin0.set_analog_period(20)
 pin0.write_analog(cerrado)
 
+# LEDs
+# Rojo = Signal 9
+# Verde = Signal 8
+
+# Caja cerrada al iniciar
+pin9.write_digital(1)   # Rojo encendido
+pin8.write_digital(0)   # Verde apagado
+
 while True:
 
     # Si no hay una clave configurada
@@ -240,6 +248,12 @@ while True:
                 # Abrir la tranca
                 pin0.write_analog(abierto)
 
+                # Rojo apagado
+                pin9.write_digital(0)
+
+                # Verde encendido
+                pin8.write_digital(1)
+
                 # Mantener abierta hasta que se presione B
                 while True:
 
@@ -252,6 +266,12 @@ while True:
                         pin0.write_analog(cerrado)
                         sleep(500)
 
+                        # Verde apagado
+                        pin8.write_digital(0)
+
+                        # Rojo encendido
+                        pin9.write_digital(1)
+
                         break
 
                     sleep(20)
@@ -263,9 +283,23 @@ while True:
             # Reiniciar el ingreso
             ingreso = ""
             display.clear()
+
+
+
+
   ```
 
   - **Próximos pasos:**
-    Pendiente  
+    Pendiente
+
+
+  - **Video:**
+  - Uploading WhatsApp Video 2026-09-30 at 8.32.26 PM.mp4…
+
+
+
+
+
+
 
 
