@@ -28,101 +28,148 @@ tecnicatura **Redes y Software** del [**Instituto Superior de Brazo Oriental**] 
 - `presentacion/presentacion-final.pptx`
 - `presentacion/video.mov`
 
+## Codigo
 from microbit import *
 import music
 
 # Contraseña
-clave = "ABAAB"
+clave = ""
 ingreso = ""
 
 # Tiempo de la última pulsación
 ultimo_tiempo = 0
 
+cerrado = 25
+abierto = 64
+
 # Imagen de candado abierto
 candado_abierto = Image(
-    "00000:"
-    "09090:"
-    "90009:"
-    "99999:"
-    "99999"
+  "00000:"
+  "09090:"
+  "90009:"
+  "99999:"
+  "99999"
 )
 
-# CONFIGURACIÓN DEL SERVO
+# Posición inicial cerrado
 pin0.set_analog_period(20)
+pin0.write_analog(cerrado)
 
-# Servo cerrado
-pin0.write_analog(20)
+# LEDs
+# Rojo = Signal 9
+# Verde = Signal 8
+
+# Caja cerrada al iniciar
+pin9.write_digital(1)   # Rojo encendido
+pin8.write_digital(0)   # Verde apagado
 
 while True:
 
-    # Tiempo máximo entre pulsaciones
-    if len(ingreso) > 0 and running_time() - ultimo_tiempo > 2000:
-        display.show(Image.NO)
-        sleep(1000)
-        ingreso = ""
-        display.clear()
+  # Si no hay una clave configurada
+  if clave == "":
 
-    # Botón A
-    if button_a.was_pressed():
-        if len(ingreso) < 5:
-            ingreso += "A"
-            ultimo_tiempo = running_time()
-            display.show("A")
-            sleep(150)
-            display.clear()
+      display.show("CLAVE")
+      sleep(1000)
+      display.clear()
 
-    # Botón B
-    if button_b.was_pressed():
-        if len(ingreso) < 5:
-            ingreso += "B"
-            ultimo_tiempo = running_time()
-            display.show("B")
-            sleep(150)
-            display.clear()
+      # Ingresar nueva clave
+      while len(ingreso) < 5:
 
-    # Contraseña completa
-    if len(ingreso) == 5:
+          if button_a.was_pressed():
+              ingreso += "A"
+              display.show("A")
+              sleep(150)
+              display.clear()
 
-        if ingreso == clave:
+          if button_b.was_pressed():
+              ingreso += "B"
+              display.show("B")
+              sleep(150)
+              display.clear()
 
-            # Mostrar candado abierto
-            display.show(candado_abierto)
+      # Guardar la clave ingresada
+      clave = ingreso
+      ingreso = ""
 
-            # Sonido de apertura
-            music.play(["C5:1", "E5:1", "G5:2"])
+      display.show(Image.YES)
+      music.play(["C5:1"])
+      sleep(1000)
+      display.clear()
 
-            # ABRIR SERVO
-            pin0.write_analog(77)
+  else:
 
-            # Borrar contraseña
-            ingreso = ""
+      # Si pasaron más de 2 segundos entre pulsaciones
+      if len(ingreso) > 0 and running_time() - ultimo_tiempo > 2000:
+          display.show(Image.NO)
+          sleep(1000)
+          ingreso = ""
+          display.clear()
 
-            # Esperar a que se suelte B
-            while button_b.is_pressed():
-                sleep(20)
+      # Botón A
+      if button_a.was_pressed():
+          if len(ingreso) < 5:
+              ingreso += "A"
+              ultimo_tiempo = running_time()
+              display.show("A")
+              sleep(150)
+              display.clear()
 
-            # ESPERAR PARA CERRAR
-            while True:
+      # Botón B
+      if button_b.was_pressed():
+          if len(ingreso) < 5:
+              ingreso += "B"
+              ultimo_tiempo = running_time()
+              display.show("B")
+              sleep(150)
+              display.clear()
 
-                if button_b.was_pressed():
+      # Verificar automáticamente al llegar a 5 caracteres
+      if len(ingreso) == 5:
 
-                    # Sonido de cierre
-                    music.play(["G5:1", "E5:1", "C5:2"])
+          if ingreso == clave:
 
-                    # CERRAR SERVO
-                    pin0.write_analog(20)
+              # Sonido de apertura
+              music.play(["G5:2"])
 
-                    sleep(500)
+              # Abrir la tranca
+              pin0.write_analog(abierto)
 
-                    display.clear()
-                    break
+              # Rojo apagado
+              pin9.write_digital(0)
 
-                sleep(20)
+              # Verde encendido
+              pin8.write_digital(1)
 
-        else:
+              # Mantener abierta hasta que se presione B
+              while True:
 
-            # Contraseña incorrecta
-            display.show(Image.NO)
+                  if button_b.was_pressed():
+
+                      # Sonido de cierre
+                      music.play(["C5:2"])
+
+                      # Cerrar la tranca
+                      pin0.write_analog(cerrado)
+                      sleep(500)
+
+                      # Verde apagado
+                      pin8.write_digital(0)
+
+                      # Rojo encendido
+                      pin9.write_digital(1)
+
+                      break
+
+                  sleep(20)
+
+          else:
+              display.show(Image.NO)
+              sleep(1000)
+
+          # Reiniciar el ingreso
+          ingreso = ""
+          display.clear()
+
             sleep(1000)
 
             ingreso = ""
