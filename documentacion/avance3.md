@@ -211,7 +211,7 @@ def enviar_aviso(resultado):
 
 
 # Configuración de radio: igual a la caja fuerte
-'''phyton
+´´´ python
 
     from microbit import *
     import music 
@@ -266,12 +266,16 @@ def enviar_aviso(resultado):
    
 '''
 
-##21/10/2026
+## 21/10/2026
+
 **Tareas realizadas**
+
 En este día implementamos las luz led a la caja fuerte que quedaron exitosamente complementadas, se arreglaron algunos errores de codigo en el tema del sintaxis, se arreglaron toques esteticos
 
-#28/10/2626
+## 28/10/2626
+
 **informe**
+
 En este día preparamos todo para presentar el proyecto hicimos check-in de todas las cosas como el servomotor,luces led, la conexiones de los cables, probamos el funcionamiento de la radio y no tuvimos ningun problema asi que, quedamos pronto para presentar el proyecto
             
 En este enlace encontrarás un [ejemplo como debe completarse el informe de avance](avance_ejem from microbit import *
