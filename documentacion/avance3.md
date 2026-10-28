@@ -211,7 +211,7 @@ def enviar_aviso(resultado):
 
 
 # Configuración de radio: igual a la caja fuerte
-´´´ python
+
 
     from microbit import *
     import music 
@@ -263,8 +263,8 @@ def enviar_aviso(resultado):
                         display.clear()
 
     sleep(10)
-   
-'''
+    
+
 
 ## 21/10/2026
 
