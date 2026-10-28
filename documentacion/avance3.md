@@ -1,4 +1,4 @@
-# Informe de Avance 3: Octubre 202x
+# Informe de Avance 3: Octubre 2026
 
 ## 14/10/2026
 - **Tareas completadas:**
@@ -92,7 +92,7 @@ def enviar_aviso(resultado):
     return False
 
 
-while True:
+    while True:
 
     # Configurar contraseña al iniciar
     if clave == "":
@@ -210,34 +210,32 @@ while True:
             display.clear() 
 
 
- -RECEPTOR:
-
-            from microbit import *
-import music
-import radio
-
 # Configuración de radio: igual a la caja fuerte
-radio.config(
+'''phyton
+
+    from microbit import *
+    import music 
+    import radio
+
+    radio.config(
     group=23,
     power=7,
     queue=3,
     length=32,
     channel=7
-)
-radio.on()
+    )
 
-ultimo_id = ""
+     radio.on()
 
-while True:
+    ultimo_id = ""
 
+    while True:
     mensaje = radio.receive()
 
     if mensaje is not None:
-
         partes = mensaje.split("|")
 
         if len(partes) == 2:
-
             identificador = partes[0]
             resultado = partes[1]
 
@@ -251,7 +249,6 @@ while True:
                     ultimo_id = identificador
 
                     if resultado == "CORRECTA":
-
                         # Un pitido corto
                         display.show(Image.YES)
                         music.play(["C6:1"])
@@ -259,7 +256,6 @@ while True:
                         display.clear()
 
                     elif resultado == "INCORRECTA":
-
                         # Dos pitidos largos de advertencia
                         display.show(Image.NO)
                         music.play(["G4:4", "R:2", "G4:4"])
@@ -267,5 +263,15 @@ while True:
                         display.clear()
 
     sleep(10)
+   
+'''
+
+##21/10/2026
+**Tareas realizadas**
+En este día implementamos las luz led a la caja fuerte que quedaron exitosamente complementadas, se arreglaron algunos errores de codigo en el tema del sintaxis, se arreglaron toques esteticos
+
+#28/10/2626
+**informe**
+En este día preparamos todo para presentar el proyecto hicimos check-in de todas las cosas como el servomotor,luces led, la conexiones de los cables, probamos el funcionamiento de la radio y no tuvimos ningun problema asi que, quedamos pronto para presentar el proyecto
             
-En este enlace encontrarás un [ejemplo como debe completarse el informe de avance](avance_ejemplo.md).
+En este enlace encontrarás un [ejemplo como debe completarse el informe de avance](avance_ejem from microbit import *
