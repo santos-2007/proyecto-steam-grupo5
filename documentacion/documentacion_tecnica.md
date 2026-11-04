@@ -31,15 +31,27 @@ Características principales:
 *(Revisar y completar con las cantidades reales usadas.)*
 
 - 2 × micro:bit (una para la caja fuerte y otra para el receptor)
+<img width="300" height="300" alt="images" src="https://github.com/user-attachments/assets/51182b96-7279-49e5-aca1-fcc03e2b4b88" />
+
 - 1 × servomotor (tranca de la caja)
+<img width="300" height="300" alt="ek1813-1" src="https://github.com/user-attachments/assets/1075e6e4-e4d3-4278-a5a0-364c35375b47" />
+
 - 1 × LED rojo (caja cerrada)
 - 1 × LED verde (caja abierta)
-- Resistencias para los LED *(completar valor, si se usaron)*
+<img width="300" height="300" alt="red" src="https://github.com/user-attachments/assets/b4f21fbf-533d-4caf-af33-b750935ba380" />
+
 - Cables de conexión (jumpers) y estaño para soldar
+<img width="300" height="300" alt="cables" src="https://github.com/user-attachments/assets/5ac0b68d-a6c3-4f3f-a973-4c4d3705d5e6" />
+
 - Fuente de alimentación / pilas para las micro:bit *(completar)*
+
 - Caja de material *(completar: madera, cartón, plástico)* pintada de color negro
+
 - Pegamento para fijar circuitos y bordes
+
 - Computadora con el editor de Python de micro:bit (o Mu) y cable USB
+<img width="300" height="300" alt="ek1813-1" src="https://github.com/user-attachments/assets/90b8334b-e62e-4f50-a30a-2d44846e7997" />
+
 
 ## 4. Diseño Mecánico
 
