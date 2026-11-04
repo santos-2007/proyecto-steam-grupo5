@@ -27,9 +27,6 @@ Características principales:
 - Comunicación por radio entre ambas micro:bit (grupo 23, canal 7, potencia 7), con alcance aproximado de 70 m sin obstáculos.
 
 ## 3. Materiales
-
-*(Revisar y completar con las cantidades reales usadas.)*
-
 - 2 × micro:bit (una para la caja fuerte y otra para el receptor)
 <img width="300" height="300" alt="images" src="https://github.com/user-attachments/assets/51182b96-7279-49e5-aca1-fcc03e2b4b88" />
 
