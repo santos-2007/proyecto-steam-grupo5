@@ -43,14 +43,14 @@ Características principales:
 - Cables de conexión (jumpers) y estaño para soldar
 <img width="300" height="300" alt="cables" src="https://github.com/user-attachments/assets/5ac0b68d-a6c3-4f3f-a973-4c4d3705d5e6" />
 
-- Fuente de alimentación / pilas para las micro:bit *(completar)*
+- Fuente de alimentación / pilas para las micro:bit*
+<img width="300" height="300" alt="bateria" src="https://github.com/user-attachments/assets/e3b663ed-aec8-41a5-ad7f-f05ee939f6db" />
 
 - Caja de material *(completar: madera, cartón, plástico)* pintada de color negro
-
-- Pegamento para fijar circuitos y bordes
+<img width="300" height="300" alt="caja" src="https://github.com/user-attachments/assets/88f54982-9321-4dca-bd4f-79e48f716ec6" />
 
 - Computadora con el editor de Python de micro:bit (o Mu) y cable USB
-<img width="300" height="300" alt="ek1813-1" src="https://github.com/user-attachments/assets/90b8334b-e62e-4f50-a30a-2d44846e7997" />
+<img width="300" height="300" alt="Kudle_OmniBook_14_CS_SoftHoneyDew_TNT_BL_WIN11_Catalog_Front_8103362" src="https://github.com/user-attachments/assets/d09e7210-443c-4df0-b65b-c5b0f85bfec5" />
 
 
 ## 4. Diseño Mecánico
