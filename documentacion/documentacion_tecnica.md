@@ -85,7 +85,7 @@ La micro:bit receptora no lleva componentes externos: usa su pantalla, su altavo
 
 **Diagrama de Tinkercad:** *[PENDIENTE.]*
 
-**Observaciones de la radio:** con potencia 7 el alcance es de unos 70 m sin obstáculos, pero con obstáculos entre ambas micro:bit el alcance baja mucho y llegó a dar problemas incluso a 3 m. La solución propuesta fue reducir los obstáculos entre ambas.
+**Observaciones de la radio:** con potencia 7 el alcance es de unos 20 m sin obstáculos, pero con obstáculos entre ambas micro:bit el alcance baja mucho y llegó a dar problemas incluso a 10 m. La solución propuesta fue reducir los obstáculos entre ambas.
 
 ## 6. Diseño Software
 
