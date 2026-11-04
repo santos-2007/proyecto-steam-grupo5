@@ -17,6 +17,8 @@
 
 - **Codigo nuevo:**
 -CAJA FUERTE:
+
+```python
 from microbit import *
 import music
 import radio
@@ -38,7 +40,7 @@ ingreso = ""
 # Tiempo de la última pulsación
 ultimo_tiempo = 0
 
-# Servomotor: valores originales
+# Servomotor
 cerrado = 25
 abierto = 64
 
@@ -59,11 +61,8 @@ pin0.set_analog_period(20)
 pin0.write_analog(cerrado)
 
 # LEDs
-# Rojo = Signal 9
-# Verde = Signal 8
-
-pin9.write_digital(1)  # Rojo encendido
-pin8.write_digital(0)  # Verde apagado
+pin9.write_digital(1)
+pin8.write_digital(0)
 
 
 # Enviar aviso y esperar confirmación
@@ -78,7 +77,6 @@ def enviar_aviso(resultado):
     # Hasta 3 intentos
     for intento in range(3):
         radio.send(mensaje)
-
         inicio_espera = running_time()
 
         while running_time() - inicio_espera < 300:
@@ -92,7 +90,8 @@ def enviar_aviso(resultado):
     return False
 
 
-    while True:
+# Programa principal
+while True:
 
     # Configurar contraseña al iniciar
     if clave == "":
@@ -207,29 +206,33 @@ def enviar_aviso(resultado):
 
             # Reiniciar ingreso
             ingreso = ""
-            display.clear() 
+            display.clear()
 
 
+```
+
+```python
 # Configuración de radio: igual a la caja fuerte
 
+from microbit import *
+import music
+import radio
 
-    from microbit import *
-    import music 
-    import radio
-
-    radio.config(
+# Configuración de radio
+radio.config(
     group=23,
     power=7,
     queue=3,
     length=32,
     channel=7
-    )
+)
 
-     radio.on()
+radio.on()
 
-    ultimo_id = ""
+ultimo_id = ""
 
-    while True:
+while True:
+
     mensaje = radio.receive()
 
     if mensaje is not None:
@@ -263,7 +266,8 @@ def enviar_aviso(resultado):
                         display.clear()
 
     sleep(10)
-    
+
+```
 
 
 ## 21/10/2026
