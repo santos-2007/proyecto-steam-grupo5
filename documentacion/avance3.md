@@ -280,6 +280,4 @@ En este día implementamos las luz led a la caja fuerte que quedaron exitosament
 
 **informe**
 
-En este día preparamos todo para presentar el proyecto hicimos check-in de todas las cosas como el servomotor,luces led, la conexiones de los cables, probamos el funcionamiento de la radio y no tuvimos ningun problema asi que, quedamos pronto para presentar el proyecto
-            
-En este enlace encontrarás un [ejemplo como debe completarse el informe de avance](avance_ejem from microbit import *
+En este día preparamos todo para presentar el proyecto hicimos check-in de todas las cosas como el servomotor,luces led, la conexiones de los cables, probamos el funcionamiento de la radio y no tuvimos ningun problema asi que, quedamos pronto para presentar el proyecto.
